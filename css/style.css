@@ -1,0 +1,353 @@
+* {
+    padding: 10px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 200px;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    background: linear-gradient(to top, #666699, #ffffff 10%);
+    padding-right: 10px;
+    padding-left: 10px;
+    justify-content: center;
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+section.inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    position: relative;
+}
+
+    .conteudo {
+    display: flex;
+    }
+    .boxPerfil {
+    background-color: #66cccc;
+    width: 360px;
+    height: 550px;
+    margin-right: 10px;
+    box-shadow: 5px 5px 3px #666699;
+    border-radius: 3px;
+    }
+    .titulo {
+    color: #f9f7fc;
+    position: relative;
+    top: 21px;
+    left: 68px;
+    font-size: 35px;
+    }
+    .nome {
+    color: #f9f7fc;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    position: relative;
+    top: 25px;
+    text-shadow: 1px 1px 1px black;
+    margin-bottom: 0px;
+    }
+
+    .fotoPerfil {
+    object-fit: cover;
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    top: 67px;
+    left: 62px;
+    box-shadow: 0px 0px 5px #666699;    
+    }
+
+
+    .tableMenu {
+    position: fixed;
+    z-index: 100;
+    width: 450px;
+    background-color: #66cccc;
+    box-shadow: 5px 5px 3px #666699;
+    border-radius: 3px;
+    font-size: 25px;
+    top: -1px;
+    }
+
+    .tableMenu tr:hover > :not(:hover){
+    opacity: .6;
+    transform: scale(0.9);
+    }
+
+    .tableMenu th {
+    color: #f9f7fc;
+    font-weight: 400;
+    transition: .35s;
+    cursor: pointer;
+    }
+    .tableMenu a {
+        text-decoration: none;
+        color: #f9f7fc;
+    }
+
+    .boxInfos {
+    background-color: #66cccc;
+    box-shadow: 5px 5px 3px #666699;
+    border-radius: 3px;
+    margin-left: 7px;
+    width: 400px;
+    height: 440px;
+    }
+    .infoShadow {
+    width: 95%;
+    height: 95%;
+    box-shadow: inset 0px 0px 15px #666699;
+    text-align: center;
+    font-size: 25px;
+    color: #f9f7fc;
+    }
+    .textInfo {
+    text-align: left;
+    position: relative;
+    top: 14px;
+    height: 110px;
+    }
+    .textInfo p {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 0.3;
+    color: #f9f7fc;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .iconsInfo {
+    display: inline-block;
+    position: relative;
+    top: 60px;
+    }
+
+    .iconsInfo a:hover {
+    transform: scale(1.1);
+    }
+
+    .iconsInfo a {
+    display: inline-block;
+    padding: 0px;
+    margin-right: 50px;
+    margin-left: 50px;
+    transition: .35s;
+    }
+
+    .iconsInfo {
+    display: inline-block;
+    padding: 0px;
+    }
+
+section.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #666699;
+    width: 100%;
+    height: 350px;
+    position: relative;
+    margin-top: 400px;
+}
+
+    .conteudoSkills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+    }
+
+    .skills h1 {
+    position: relative;
+    top: -10px;
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px 3px rgb(43, 43, 43);
+    }
+    
+    .skills_Button {
+        background-color: #666699;
+        cursor: pointer;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0px 0px 5px white;
+        scale: 1.02;
+        transition: .35s;
+        position: relative;
+        top: -29px;
+        left: 5px;
+    }
+
+    .skills_Button:hover {
+        background-color: #7b7bb8;
+        box-shadow: 0px 0px 10px white;
+        transition: 0.35s;
+    }
+
+    .imgIcons {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 10px;
+    position: relative;
+    top: -46px;
+    left: 1px;
+    }
+
+    .imgIcons img {
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    filter: drop-shadow(5px 5px 5px black);
+    padding: -6px;
+    }
+
+    .textBoxMais {
+        display: none;
+        opacity: 0;
+        position: relative;
+        top: 330px;
+        background-color: #666699;
+        border: 2px solid rgb(26, 26, 26);
+        width: 400px;
+        height: 300px;
+        font-size: 20px;
+        transition: .35s;
+    }
+
+    .textBoxMais pre{
+        margin: 0px;
+        padding: 0px;
+    }
+
+section.projetos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 400px;
+    margin-bottom: 300px;
+    width: 100%;
+    height: 470px;  
+    }
+
+    .projetosBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #66cccc;
+    width: 1200px;
+    height: 500px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 30px #666699;
+    }
+
+    .projetosBox h1 {
+    color: white;
+    text-shadow: 2px 2px 6px black;
+    position: relative;
+    top: -30px;
+    margin: 0px;
+    font-size: 35px;
+    }
+
+    .projetosShadow {
+    width: 80%;
+    height: 60%;
+    box-shadow: inset 0px 0px 10px #666699;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .projetosShadow h2 {
+        color: #ffffff;
+        text-shadow: 0px 0px 5px #66cccc;
+        position: relative;
+        top: 75px;
+    }
+
+    .projeto1 {
+    margin: 10px;
+    padding: 0px;
+    background-color: rgb(136, 159, 160);
+    width: 30%;
+    height: 90%;
+    text-align: center;
+    }
+    .projeto2 {
+    margin: 10px;
+    padding: 0px;
+    background-color: rgb(173, 198, 201);
+    width: 30%;
+    height: 90%;
+    text-align: center;
+    }
+    .projeto3 {
+    margin: 10px;
+    padding: 0px;
+    background-color: rgb(186, 214, 216);
+    width: 30%;
+    height: 90%;
+    text-align: center;
+    }
+
+@media screen and (max-width: 940px) {
+body {
+    align-items: center;
+}
+.conteudo {
+    height: max-content;
+    flex-direction: column;
+    align-items: center;
+}
+.boxPerfil {
+    margin-bottom: 30px;
+}
+.projetosBox {
+    height: 600px;
+}
+.projetosShadow {
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+}
+.projeto1 {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projeto2 {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projeto3 {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projetosShadow h2 {
+    top: 3px;
+}
+.projetosBox h1 {
+    top: -13px;
+}
+}
