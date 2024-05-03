@@ -308,7 +308,22 @@ section.projetos {
 
 @media screen and (max-width: 940px) {
 body {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+}
+section.inicio {
+    scale: 0.9;
+    margin-top: 10px;
+}
+.tableMenu {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    justify-content: center;
+    display: flex;
+    height:57px;
+    width: 348px;
 }
 .conteudo {
     height: max-content;
@@ -349,5 +364,8 @@ body {
 }
 .projetosBox h1 {
     top: -13px;
+}
+.textBoxMais {
+    scale: 0.9;
 }
 }
