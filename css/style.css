@@ -312,9 +312,12 @@ body {
     flex-direction: column;
     align-items: center;
 }
-section.inicio {
+.inicio {
     scale: 0.9;
     margin-top: 10px;
+}
+.skills {
+    width: 150%;
 }
 .tableMenu {
     display: flex;
