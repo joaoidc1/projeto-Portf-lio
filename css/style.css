@@ -129,7 +129,7 @@ section.inicio {
     .iconsInfo {
     display: inline-block;
     position: relative;
-    top: 60px;
+    top: 19px;
     }
 
     .iconsInfo a:hover {
@@ -147,6 +147,16 @@ section.inicio {
     .iconsInfo {
     display: inline-block;
     padding: 0px;
+    }
+
+    .contatos {
+        margin-top: 5px;
+    }
+
+    .contatos h2 {
+        font-size: 20px;
+        margin: 0px;
+        padding: 1px;
     }
 
 section.skills {
